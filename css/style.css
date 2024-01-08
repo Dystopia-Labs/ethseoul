@@ -1,8 +1,21 @@
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: url(../font/Pretendard-Light.woff2) format('woff2'),
+  url(../font/Pretendard-Light.woff) format('woff');
+}
+
 html,
 body {
  height: 100%;
  background-color: #231f20;
- font-family: 'Nunito';
+ background-image: url('../img/website-background.png');
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover;
+ font-family: 'Pretendard';
+ overflow-x: hidden;
 }
 
 a {
@@ -36,8 +49,8 @@ h6 {
 }
 
 .nav-link {
-  font-weight: bold;
   position: relative;
+  z-index: 99;
 }
 
 .nav-link:after {
@@ -45,7 +58,7 @@ h6 {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -63,9 +76,10 @@ h6 {
 }
 
 .btn {
-  padding: 6px 12px;
-  border-radius: 2px;
+  padding: 6px 15px;
+  border-radius: 20px;
   transition: all ease-in .3s;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -73,7 +87,17 @@ h6 {
 }
 
 .btn-blue {
-  background-color: #00aaeb;
+  font-size: 20px;
+  border-color: #0068d0;
+  color: #0068d0;
+}
+
+.btn-blue:hover {
+  color: #0068d0;
+  text-shadow:
+    0 0 7px #0068d0,
+    0 0 10px #0068d0,
+    0 0 21px #0068d0;
 }
 
 .btn-big {
@@ -82,102 +106,73 @@ h6 {
 
 .border {
   width: 100%;
-  height: 5px;
+  height: 1px;
   background-color: #fff;
-}
-
-.logo-big {
-  width: 400px;
-}
-
-section {
-  overflow-x: hidden;
 }
 
 .main-section {
   position: relative;
 }
 
-.star1 {
-  width: 500px;
+.heading {
+  margin: 50px 0;
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.text-year {
   position: absolute;
-  top: -100px;
-  left: -5%;
-  animation: move1 3s ease infinite;
+  top: -50px;
+  right: 0;
+  font-size: 80px;
 }
 
-@keyframes move1 {
-  50% {
-     transform: scale(0.9);
-  }
-}
-
-.star2 {
-  width: 500px;
+.img-ring {
+  opacity: 0.3;
   position: absolute;
-  top: 0;
-  right: -10%;
-  animation: move2 3s ease infinite;
+  top:-21%;
+  left:-22%;
+  -webkit-transform:translate(21%,22%);
+  -ms-transform:translate(21%,22%);
+  transform: translate(21%, 22%);
+  width: 132%;
+  animation-name: rotate;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes move2 {
-  50% {
-     transform: scale(1.1);
-  }
+.link-footer a img {
+  transition: all ease-in .3s;
+}
+
+.link-footer a:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes rotate {
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 1199px) {
   .container {
     max-width: 100%;
   }
-
- .star1,
- .star2 {
-   width: 400px;
- }
 }
 
 @media screen and (max-width: 991px) {
  .nav-item {
    text-align: center;
  }
-
- .star1,
- .star2 {
-   width: 350px;
- }
-}
-
-.logos-btm a {
-  padding: 0 15px;
 }
 
 @media screen and (max-width: 767px) {
-
-  .star1,
-  .star2 {
-    width: 300px;
+  .link-footer a {
+    display: block;
+    margin-top: 20px;
   }
-
- .logos-btm a {
-   display: block;
-   margin: 0 auto;
-   margin-top: 20px;
- }
-
- .logo-big {
-   padding-top: 100px;
- }
-}
-
-@media screen and (max-width: 599px) {
-  .star2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 450px) {
- .logo-big {
-   width: 100%;
- }
 }

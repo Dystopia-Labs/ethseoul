@@ -83,22 +83,24 @@ h6 {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
-.btn-blue {
+.btn-yellow {
   font-size: 20px;
-  border-color: #0068d0;
-  color: #0068d0;
+  background: #d6ac00;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 18px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(255,255,255,1);
 }
 
-.btn-blue:hover {
-  color: #0068d0;
+/*.btn-yellow:hover {
   text-shadow:
-    0 0 7px #0068d0,
-    0 0 10px #0068d0,
-    0 0 21px #0068d0;
-}
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+}*/
 
 .btn-big {
   padding: 10px 80px;
@@ -117,10 +119,10 @@ h6 {
 .heading {
   margin: 50px 0;
   padding: 20px 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /*border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;*/
   font-weight: 700;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .text-year {
@@ -171,6 +173,10 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
+  .heading {
+    font-size: 50px;
+  }
+
   .link-footer a {
     display: block;
     margin-top: 20px;

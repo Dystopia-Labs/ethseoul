@@ -41,6 +41,24 @@ h6 {
   color: #fff;
 }
 
+.table-dark {
+	background-color: #000;
+}
+
+.nav-tabs .nav-item {
+	background-color: #000;
+	margin-bottom: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #000;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
 .bg-black {
 	background-color: #000;
 }
@@ -291,4 +309,31 @@ h6 {
 	.section-heading {
 		font-size: 32px;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.table thead {
+		display: none;
+	}
+
+  .table tr {
+		display: block;
+		border-bottom: 1px solid #fff;
+	}
+
+	.table tr:last-child {
+	 border-bottom: 0;
+ }
+
+	.table td {
+    display: block;
+    text-align: right;
+		min-height: 48px;
+  }
+
+	.table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
 }

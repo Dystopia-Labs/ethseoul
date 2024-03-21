@@ -84,7 +84,7 @@ h6 {
   z-index: 99;
 }
 
-.nav-link:after {
+.nav-link_und:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -97,13 +97,36 @@ h6 {
   width: 0;
 }
 
-.nav-link:hover:after {
+.nav-link_und:hover:after {
   width: 100%;
   left: 0;
 }
 
 .navbar .navbar-toggler-icon {
   background-image: url('../img/burger.png');
+}
+
+.dropdown a {
+	transition: all ease 0.3s;
+}
+
+.dropdown a:hover {
+	transform: scale(1.05);
+}
+
+.dropdown-menu {
+	color: #fff;
+	background-color: #000;
+}
+
+.dropdown-item {
+	padding: 8px;
+	color: #fff;
+}
+
+.dropdown-item:hover {
+	background-color: #000;
+	color: #fff;
 }
 
 .btn {

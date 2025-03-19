@@ -222,6 +222,10 @@ h6 {
   transform: scale(1.05);
 }
 
+.apply{
+	margin-top: 50px;
+}
+
 .wrap {
 	margin-bottom: 50px;
 	padding: 10px;

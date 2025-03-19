@@ -270,6 +270,10 @@ h6 {
 	justify-content: center;
 }
 
+.wrap-partners {
+	justify-content: center;
+}
+
 .wrap-partners img {
 	max-width: 200px;
 	transition: all ease 0.3s;

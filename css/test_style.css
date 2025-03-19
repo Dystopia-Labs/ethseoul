@@ -315,7 +315,8 @@ h6 {
   }
 
 	.section-heading {
-		font-size: 32px;
+		font-size: 28px;
+		white-space: nowrap;
 	}
 }
 

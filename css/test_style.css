@@ -275,6 +275,10 @@ h6 {
 	transition: all ease 0.3s;
 }
 
+.wrap-partners .ewhachain{
+	max-width: 100px;
+}
+
 .wrap-partners img:hover {
 	transform: scale(1.1);
 }

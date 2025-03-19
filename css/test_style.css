@@ -303,24 +303,24 @@ h6 {
 	 }
 	}
 	
-	@media screen and (max-width: 767px) {
-	  .heading {
-			margin: 0;
-	    font-size: 50px;
-	  }
+@media screen and (max-width: 767px) {
+	.heading {
+		margin: 0;
+		font-size: 50px;
+	}
 	
-	  .link-footer a {
-	    display: block;
-	    margin-top: 20px;
-	  }
+	.link-footer a {
+		display: block;
+		margin-top: 20px;
+	}
 	
 	.section-heading {
-		font-size: 28px;
+		font-size: 32px;
 		white-space: nowrap;
 	}
 
 	.wrap {
-		padding:50px;
+		padding:0 50px;
 	}
 
 }

@@ -232,8 +232,15 @@ h6 {
 	transform: translateY(-10px);
 }
 
+section.bg-black{
+	margin-bottom: 50px;
+}
+
 .section-heading {
 	font-size: 60px;
+	padding-top: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
 }
 
 .wrap-sponsors {

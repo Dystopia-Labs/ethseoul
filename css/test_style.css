@@ -240,7 +240,7 @@ h6 {
 	justify-content: center;
 }
 
-.wrap-sponsors h6 {
+.wrap-sponsors h5 {
 	text-align: center;
 	display: block;
 	width: 100%;
@@ -263,7 +263,7 @@ h6 {
 }
 
 .wrap-partners .col-lg-3 {
-	margin: 50px 0;
+	margin: 40px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -315,7 +315,7 @@ h6 {
 	}
 	
 	.section-heading {
-		font-size: 32px;
+		font-size: 30px;
 		white-space: nowrap;
 	}
 

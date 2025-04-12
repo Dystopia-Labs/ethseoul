@@ -311,6 +311,28 @@ section.bg-black{
   height: 100%;
 }
 
+
+
+/* table */
+table td, table th{
+	padding: 0.5rem;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.time span, .speaker > span{
+	font-size: 0.8rem;
+	white-space: nowrap;
+}
+
+.duration{
+	font-size: 0.9rem;
+}
+
+
+
+
+
 @media screen and (max-width: 1199px) {
   .container {
     max-width: 100%;
